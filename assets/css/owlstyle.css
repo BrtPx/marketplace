@@ -1,0 +1,91 @@
+.preowl {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    /* position relative and z-index fix webkit rendering fonts issue */
+    position: fixed;
+    z-index: 1; }
+    .preowl .owl-stage {
+      position: relative;
+      -ms-touch-action: pan-Y;
+      touch-action: manipulation;
+      -moz-backface-visibility: hidden;
+      /* fix firefox animation glitch */ }
+    .preowl .owl-stage:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    .preowl .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+      /* fix for flashing background */
+      -webkit-transform: translate3d(0px, 0px, 0px); }
+    .preowl .owl-wrapper,
+    .preowl .owl-item {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0); }
+    .preowl .owl-item {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      -webkit-backface-visibility: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none; }
+    .preowl .owl-item img {
+      display: block;
+      width: 100%; }
+    .preowl .owl-nav.disabled,
+    .preowl .owl-dots.disabled {
+      display: none; }
+    .preowl .owl-nav .owl-prev,
+    .preowl .owl-nav .owl-next,
+    .preowl .owl-dot {
+      cursor: pointer;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .preowl .owl-nav button.owl-prev,
+    .preowl .owl-nav button.owl-next,
+    .preowl button.owl-dot {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0 !important;
+      font: inherit; }
+    .preowl.owl-loaded {
+      display: block; }
+    .preowl.owl-loading {
+      opacity: 0;
+      display: block; }
+    .preowl.owl-hidden {
+      opacity: 0; }
+    .preowl.owl-refresh .owl-item {
+      visibility: hidden; }
+    .preowl.owl-drag .owl-item {
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .preowl.owl-grab {
+      cursor: move;
+      cursor: grab; }
+    .preowl.owl-rtl {
+      direction: rtl; }
+    .preowl.owl-rtl .owl-item {
+      float: right; }
+  
+  /* No Js */
+  .no-js .preowl {
+    display: block; 
+  }

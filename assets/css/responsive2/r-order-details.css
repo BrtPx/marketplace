@@ -1,0 +1,123 @@
+/* Responsive Design */
+@media(max-width: 1024px) {
+    .right_sec {
+        min-width: 230px;
+        height: 175px;
+    }
+    
+    .right_sec_content > p {
+        line-height: 30px;
+        font-size: 14px;
+    }
+    
+    .right_sec_footer > p {
+        font-size: 16px;
+    }
+
+    .content_product > p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 992px) {
+    .dashboard-details {
+        width: 100%;;
+    }
+    .width990 {
+        width: 0;
+    }
+
+    .main_wrapper {
+        width: 100%;
+    }
+
+    .sec_1 {
+        display: block;
+    }
+
+    tr.product_title > th {
+        padding: 10px 10px 10px 10px;
+        font-size: 14px;
+    }
+
+    th.shop_info_title > p {
+        font-family: arial;
+        font-size: 14px;
+    }
+    
+    .product_img_content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .content_product > p {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .right_sec {
+        margin: 20px 0;
+    }
+
+    .sec_2_inner_content > p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .sec_2_inner_content > button {
+        width: 90px;
+        height: 30px;
+    }
+    
+    button.ready_to_ship > a {
+        font-size: 10px;
+    }
+    
+    .sec_2_inner_content > button {
+        width: 80px;
+        height: 30px;
+    }
+    
+    button.cancel > a {
+        font-size: 10px;
+    }
+    
+    .left_sec {
+        max-width: 100%;
+    }
+    .content_product{
+        margin-top: 15px;
+    }
+    p.price_row {
+        margin-bottom: 0;
+    }
+    .img_action {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 786px) {
+    .left_sec {
+        min-width: 100%;
+    }
+    
+    table#product_table {
+        width: 100%;
+    }
+}
+
+@media(max-width: 440px) {
+    .sec_2_inner_content > p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    tr.product_title > th {
+        padding: 8px 5px 8px 5px;
+        font-size: 12px;
+    }
+
+    th.shop_info_title {
+        padding: 10px 5px;
+    }
+}

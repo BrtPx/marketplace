@@ -1,0 +1,57 @@
+@media(max-width: 900px){
+    .input_datatable {
+        min-width: 300px;
+    }
+    .w-d-t-left select{
+        width: 150px;
+    }
+}
+
+@media(max-width: 992px){
+    .dashboard-details {
+        width: 100%;;
+    }
+}
+
+@media(max-width: 768px){
+    .dataTables_wrapper .dataTables_filter {
+        clear: both;
+        text-align: center;
+    }
+    .input_datatable {
+        min-width: 400px;
+        float: left;
+    }
+    .wrap-top-data {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .w-d-t-left select {
+        width: 250px;
+    }
+    .data-middle-ul {
+        flex-wrap: wrap;
+    }
+    .data-middle-ul li a {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 500px){
+    .product-data-top{
+        flex-direction: column;
+    }
+    .product-data-top > h5{
+        margin-bottom: 15px;
+    }
+    .input_datatable {
+        min-width: 300px;
+        float: left;
+    }
+    .data-table{
+        padding-bottom: 30px;
+    }
+}

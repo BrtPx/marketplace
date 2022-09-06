@@ -1,0 +1,107 @@
+.nav-fixed{
+    min-width: 20%;
+    height: 900px;
+    margin-top: 3px;
+    background: #fff;
+    /*position: fixed;
+    */box-shadow: 1px 0 6px rgba(0, 0, 0, 0.171);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.nav-fixed > div{
+    padding: 50px 15px;
+}
+
+.nav-ul-fixed{
+    list-style: none;
+}
+
+.nav-ul-fixed li{
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.nav-ul-fixed li:hover{
+    background: var(--primary);
+}
+
+.li-active{
+    background: var(--primary);
+}
+
+.nav-ul-fixed li a{
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.nav-ul-fixed li:hover a{
+    color: #fff;
+}
+
+.a-active{
+    color: #fff !important;
+}
+
+.nav-icon{
+    margin-right: 10px;
+}
+
+.nav-icon{
+    fill: #fff;
+}
+
+.path-active{
+    stroke: #fff;
+}
+
+.path-hover{
+    stroke: #000;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.nav-ul-fixed li:hover .path-hover{
+    stroke: #fff;
+}
+
+@media(max-width: 992px){
+    .nav-fixed{
+        position: absolute;
+        top: 0;
+        left: -250px;
+        z-index: 99;
+    }
+}
+
+@media(max-width: 500px){
+    .nav-fixed{
+        height: 600px;
+    }
+}
+
+.nav-fixed-active{
+    left: 0 !important;
+}

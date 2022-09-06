@@ -1,0 +1,91 @@
+.hero-3-box:nth-child(1)::before {
+    background: none;
+}
+.hero-child-1.hero-child-1_active {
+    z-index: 9999;
+    position: fixed;
+    top: 145px;
+}
+.nav-link:focus, .nav-tabs .nav-link:hover,.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	border-bottom: 3px solid var(--primary) !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+	background-color: #f7f6f2;
+}
+.scroll-nav-ul {
+    justify-content: space-around !important;
+}
+.nav-tabs .nav-link{
+	color: #000000;
+}
+.nav-tabs {
+    border-bottom: 0px !important;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #C4C4C4;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+
+.cart-total {
+    background: #B92227;
+    padding: 3px !important;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+	right:0;
+	left: 15px;
+}
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.activ, .accordion:hover {
+	background-color: #ccc;
+}
+
+.accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+
+.activ:after {
+	content: "\2212";
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+

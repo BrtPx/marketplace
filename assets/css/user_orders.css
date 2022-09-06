@@ -1,0 +1,174 @@
+/* ===========@import css file============= */
+
+@import "../css/@import/_header.css";
+@import "../css/@import/_nav_fixed.css";
+@import "../css/@import/_footer.css";
+
+
+
+
+/* ============================================== */
+
+/* basic css code */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+ul{
+    padding-left: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+:root{
+    --primary: #B92227; 
+    --hero-shadow: 0 1px 8px rgba(0, 0, 0, 0.322);
+}
+
+
+
+/* __________________________________ */
+
+.wrap-dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.dashboard-details{
+    width: 80%;
+}
+
+/* INPUT RESET */
+input {
+    box-shadow: 0 0 0 0 transparent !important;
+    outline: none !important;
+    border: 1px solid #C4C4C4;
+}
+input:focus, input:focus-visible, input:focus-within, input:fullscreen {
+    box-shadow: 0 0 0 0 transparent !important;
+    outline: none !important;
+    border: 1px solid #C4C4C4;
+}
+select {
+    box-shadow: 0 0 0 0 transparent !important;
+    outline: none;
+    border: 1px solid #C4C4C4;
+}
+select:focus, select:focus-visible, select:focus-within, select:fullscreen {
+    box-shadow: 0 0 0 0 transparent;
+    outline: none;
+    border: 1px solid #C4C4C4;
+}
+
+
+/* main content */
+.mainDiv {
+    display: flex;
+}
+
+.main_content {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.sec1 {
+    padding: 30px;
+}
+
+.sec_heading > h2 {
+    font-size: 28px;
+}
+
+.search_keyword_date {
+    padding: 35px;
+    background: #fff;
+    box-shadow: 0px 2px 5px 2px #bbbbbb;
+}
+
+.input_table_data {
+    margin: 20px 0;
+}
+
+.input_submit_header {
+    background: #b92227;
+    color: #fff;
+    font-weight: 500;
+    transition: all .3s ease;
+    border: none;
+}
+
+.input_submit_header:hover {
+    background: #c12b30;
+}
+
+.table_data {
+    padding: 25px;
+    background: #fff;
+    margin: 30px 0;
+    box-shadow: 0 1px 8px 0px #bbbbbb;
+}
+
+button.table_button {
+    padding: 5px 30px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #B92227;
+    color: #B92227;
+    font-weight: 500;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+button.table_button:hover {
+    background: #B92227;
+    color: #fff;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 10px;
+    border-bottom: 1px solid #C4C4C4 !important;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    border-color: #C4C4C4;
+}
+
+td > p {
+    margin-bottom: 5px;
+}
+
+p.delivered {
+    color: #006838;
+    font-weight: 500;
+}
+
+p.returned {
+    font-weight: 500;
+    color: #16CBE3;
+}
+
+p.cancelled {
+    font-weight: 500;
+    color: #B92227;
+}
+
+.curser-icon{
+    cursor: pointer;
+}

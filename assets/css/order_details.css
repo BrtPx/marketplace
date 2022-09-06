@@ -1,0 +1,303 @@
+/* ===========@import css file============= */
+
+@import "../css/@import/_header.css";
+@import "../css/@import/_nav_fixed.css";
+@import "../css/@import/_footer.css";
+
+
+
+
+/* ============================================== */
+
+/* basic css code */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+ul{
+    padding-left: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+:root{
+    --primary: #B92227; 
+    --hero-shadow: 0 1px 8px rgba(0, 0, 0, 0.322);
+}
+
+
+
+/* __________________________________ */
+
+.wrap-dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background: #f1f1f1;
+}
+
+.dashboard-details{
+    width: 80%;
+}
+
+.main_wrapper {
+    background: #F7F6F2;
+}
+
+
+.order_no {
+    margin: 0 25px;
+    padding: 5px;
+}
+
+.main_sec_title {
+    margin: 0 25px;
+    padding: 20px 0;
+}
+
+.order_no > h4 {
+    font-family: arial;
+}
+
+.main_sec_title > h2 {
+    font-family: arial;
+}
+
+.main_div {
+    display: flex;
+}
+
+.sec_1 {
+    display: flex;
+    padding: 20px;
+}
+
+table, th, td {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0 !important;
+}
+
+table#product_table {
+    width: 100%;
+}
+
+.table_2_td {
+    width: 38%;
+}
+
+tbody {
+    background: #fff;
+}
+
+tr.product_title > th {
+    padding: 15px 35px 15px 0;
+    font-family: arial;
+}
+
+.product_img_content {
+    display: flex;
+    padding: 10px;
+}
+
+.content_product > p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: arial;
+}
+
+p.price_row {
+    margin-bottom: 50%;
+}
+
+.img_action {
+    margin-bottom: 50%;
+}
+
+tr.product_title {
+    background: #FFAF37;
+}
+
+.left_sec {
+    max-width: 68%;
+    margin: 0;
+}
+
+.right_sec {
+    min-width: 25%;
+    margin: 0 auto;
+    height: 190px;
+    border: 1px solid #CACAC9;
+    border-radius: 3px;
+}
+
+.right_sec_content > p {
+    line-height: 35px;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.right_sec_content {
+    padding: 15px;
+    border-bottom: 1px solid #CACAC9;
+}
+
+.right_sec_footer {
+    padding: 15px;
+}
+
+.right_sec_footer > p {
+    font-size: 18px;
+    font-family: arial;
+}
+
+.total_amout_class {
+    font-weight: bold;
+}
+
+/* section 2 */
+.sec_2 {
+    display: flex;
+    padding: 20px;
+}
+
+.sec_shop_info {
+    max-width: 710px;
+    margin: 0;
+}
+
+.sec_2_inner_content {
+    padding: 10px;
+}
+
+.sec_shop_info {
+    background: #fff;
+}
+
+table#table_2 {
+    table-layout: fixed;
+    border: 1px solid #D1D0CF;
+}
+
+th.shop_info_title {
+    padding: 20px 10px;
+    text-align: left;
+    border-bottom: 1px solid #D1D0CF;
+}
+
+th.shop_info_title > p {
+    font-family: arial;
+}
+
+.sec_2_inner_content > p {
+    font-family: arial;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+p.shop_desc_2 {
+    color: #252C32;
+}
+
+.sec_2_inner_content > p > a {
+    color: #B92227;
+    font-weight: 400;
+}
+
+.sec_2_inner_content > p > a:hover {
+    text-decoration: none;
+}
+
+.sec_2_inner_content > button {
+    width: 130px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+button.ready_to_ship {
+    background: #006838;
+    cursor: pointer;
+    border: 1px solid #006838;
+}
+
+button.ready_to_ship > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button.ready_to_ship:hover > a {
+    color: #006838;
+}
+
+button.ready_to_ship:hover {
+    background: #fff;
+}
+
+button.cancel {
+    border: 1px solid #C9575A;
+    background: #fff;
+    border: 1px solid #C9575A;
+}
+
+button.cancel > a {
+    color: #C9575A;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button.cancel:hover > a {
+    color: #fff;
+}
+
+button.cancel:hover {
+    background: #C9575A;
+
+}
+
+.shop_info_title_2 > p {
+    text-align: center;
+}
+
+.table_2_td_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+td.center_text {
+    text-align: center;
+}
+
+td.center_img {
+    text-align: center;
+}
