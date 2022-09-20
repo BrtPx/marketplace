@@ -10,8 +10,7 @@
     $topAdvert = $this->db->get_where('ptz_bunners', array('type' => 'TopHeader'))->row()->image;
     ?>
     <title><?= $title; ?></title>
-    <!-- <link href="https://code.jquery.com/jquery-3.4.1.min.js"> -->
-    <link href="<?= base_url() ?>assets/js/owlcarousel/owl.carousel.min.js">
+    <link href="<?= base_url() ?>assets/js/slick.min.js">
     <!-- preload load intensive images -->
     <link rel=preload as=image href="<?= imagebaseURL . $topAdvert; ?>">
     <?php foreach ($slidebunners['bunners'] as $slideImaxges) :
@@ -23,38 +22,30 @@
     ?>
         <link rel=preload as=image href="<?= imagebaseURL . $slideImaxges->slider_image ?>">
     <?php endforeach; ?>
-    <link rel="shortcut icon" href="<?= imagebaseURL . $favicon; ?>">
-    <!-- <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <!-- <script src="<?= base_url() ?>assets/js/jquery-3.5.1.min.js"></script> -->
     <!-- jquery cdn link -->
+    <link rel="shortcut icon" href="<?= imagebaseURL . $favicon; ?>">
+
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- font family rubik -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/> -->
-
-    <!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= base_url() ?>assets/css/owlstyle.css"> -->
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= base_url() ?>assets/css/owlcarousel/owl.carousel.css">
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= base_url() ?>assets/css/owlcarousel/owl.carousel.min.css">
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= base_url() ?>assets/css/owlcarousel/owl.theme.default.min.css">
-
-    <!-- owl slider cdn links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- bootstrap cdn link -->
 
+    <!-- custom cdn links -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/toastr.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/responsive/responsive.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/az.css">
-    <!-- custom cdn links -->
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/slick.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/slick-theme.css">
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213653324-1"></script> -->
@@ -71,10 +62,12 @@
 </head>
 
 <body>
+    <div class="preloading">
+        <span class="loader"></span>
+    </div>
     <?php if ($topAdvert) : ?>
-
-        <img src="<?= imagebaseURL . $topAdvert; ?>" alt="leaderboard" style="width: 100% !important;height: 100% !important;" />
-        <!-- <img src="<?= base_url() ?>assets/img/leaderboard.gif" alt="leaderboard" style="width: 100% !important;height: 100% !important;" /> -->
+        <!-- <img src="<?= imagebaseURL . $topAdvert; ?>" alt="leaderboard" style="width: 100% !important;height: 100% !important;" /> -->
+        <img src="<?= base_url() ?>assets/img/leaderboard.gif" alt="leaderboard" style="width: 100% !important;height: 100% !important;" />
     <?php endif; ?>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="elfsight-app-1b28ae8d-f8b3-4477-b044-878300e7810c"></div>

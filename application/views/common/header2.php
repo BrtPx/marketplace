@@ -18,13 +18,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <!-- font awesome cdn link  -->
-
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= base_url() ?>assets/css/owlcarousel/owl.carousel.css">
-
-
-    <!-- owl slider cdn links -->
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/slick.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/slick-theme.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap cdn link -->
@@ -139,7 +134,7 @@
         }
     </style>
     <!-- custom cdn links -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213653324-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213653324-1"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -155,7 +150,7 @@
 <body>
     <?php if ($topAdvert) : ?>
         <img src="<?= imagebaseURL . $topAdvert; ?>" alt="leaderboard" style="width: 100% !important;height: 100% !important;" />
-        <!-- <img src="<?= base_url() ?>assets/img/leaderboard.gif" alt="leaderboard" style="width: 100% !important;height: 100% !important;"/> -->
+        <!-- <img src="<?= base_url() ?>assets/img/leaderboard.gif" alt="leaderboard" style="width: 100% !important;height: 100% !important;" /> -->
     <?php endif; ?>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="elfsight-app-1b28ae8d-f8b3-4477-b044-878300e7810c"></div>
@@ -288,23 +283,20 @@
             <!-- slide on left -->
             <?php if ($title != 'View product' && $title != 'Search results' && $title != 'Buy now Pay later' && $title != 'Privacy & Cookies Page' && $title != 'FAQ`s Page' && $title != 'About Us Page' && $title != 'Return Policy Page' && $title != 'Help Center Page' && $title != 'Store Location Page' && $title != 'My Patazone Account' && $title != 'Guest Checkout' && $title != 'My Orders' && $title != 'Change Password' && $title != 'Welcome Please Login' && $title != 'Create Your Account & Shop With Confidence.' && $title != 'My cart' && $title != 'view product' && $title != 'Order success Page') : ?>
                 <?php if ($title != 'shop' && $title != 'Buy now Pay later' && $title != 'Patazone|Lipalater Register' && $title != 'Search results') : ?>
-                    <div class="tab-wrapper loading">
-                        <div class="tab-content">
-                            <div class="hero-child">
-                                <div class="hero-child-2">
-                                    <div class="owl-carousel owl-theme hero-slider">
 
-                                        <?php foreach ($sliders as $slide) : ?>
-                                            <div class="item hero-slide" style="background: url(<?= imagebaseURL . $slide->slider_image ?>) no-repeat; background-size: cover;">
-                                            </div>
-                                        <?php endforeach; ?>
-
+                    <div class="hero-child">
+                        <div class="hero-child-2">
+                            <div class="hero-slider slicker-for">
+                                <?php foreach ($sliders as $slide) : ?>
+                                    <div class="item hero-slide" style="background: url(<?= imagebaseURL . $slide->slider_image ?>) no-repeat; background-size: cover;">
                                     </div>
-                                </div>
-                                <!-- 2 -->
+                                <?php endforeach; ?>
+
                             </div>
                         </div>
+                        <!-- 2 -->
                     </div>
+
             <?php endif;
             endif; ?>
         </div>

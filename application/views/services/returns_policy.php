@@ -6,13 +6,14 @@
                     <h3 class="section-title mb-0 pb-2 font-size-25">How to Return a Product</h3>
                 </div>
                 <div class="row mb-3">
-                    <p class="p-3">If your product is damaged, defective, incorrect or incomplete at the time of delivery, please file a return request on the app or website within 24 hours or give us a call on <a href="tel:0711082211">0711082211</a> and we will be happy to assist.<br>
+                    <p class="p-3">
+                        If your product is damaged, defective, incorrect or incomplete at the time of delivery, please file a return request on the app or website within 24 hours or give us a call on <a href="tel:0700588885">0700588885</a> and we will be happy to assist.<br>
                         <br>For selected categories, we accept a change of mind: Men’s Fashion, Women’s Fashion, Men’s bags, Women’s bags, Luggage & Suitcase, Bedding, Bath. Exceptions are women's intimate apparel, men's innerwear, swimwear, eyewear, jewellery, watches, duffel bags, shoe-care.<br>
                         <br>For device related issues after usage or the expiration of the return window, seller warranty or brand warranty could be given by the seller. For seller warranty, please contact the seller. The contact details of the seller can be found on the invoice. For brand warranty, please refer to the Brand Contact List. For more information on warranty claims please view our Warranty Policy.<br>
-                        <br>Returns Policy per Category are as follow;<br>
                     </p>
                 </div>
             </div>
+            <h2>Return Policy per Category are as follow;</h2>
             <!-- Phones and Tablets -->
             <div class="row bg-white p-4 mb-5 patazon-border-radius">
                 <div class="border-bottom border-color-1 col-md-12 rounded-0 mb-3">
@@ -29,7 +30,6 @@
                         <li>If your item arrived in defective / damaged / incorrect / incomplete condition, a refund will be issued.</li>
                         <li>For overseas products, please refer to the product page to check the applicable return reasons.</li>
                         <li>For device-related issues after usage please contact the brand warranty provider directly (if applicable).</li>
-
                     </ul>
                     </p>
                 </div>
@@ -386,17 +386,21 @@
                 </div>
                 <div class="row mb-3">
                     <p class="p-3">
-                        Other Categories<br>
-                        <br>Please note that certain items marked as non-returnable on the product page are not eligible for return. For more information view the complete list of non-returnable items, contact us.<br>
+                        <!-- Other Categories<br> -->
+                        Please note that certain items marked as non-returnable on the product page are not eligible for return. For more information view the complete list of non-returnable items or contact us.<br>
                     <h5>Valid reasons to return an item</h5>
-                    Delivered Product is damaged (physically destroyed or broken) / defective (dead on arrival).<br>
-                    Delivered Product is incorrect (presentation different on website) / incomplete (missing parts).<br>
-                    Delivered Product is “No longer needed” (you no longer have a use for the product / you have changed your mind about the purchase / the size of a fashion product does not fit / you do not like the product after opening the package) - eligible for selected products only.<br>
+                    <ul>
+                        <li>Delivered Product is damaged (physically destroyed or broken) / defective (dead on arrival).</li>
+                        <li>Delivered Product is incorrect (presentation different on website) / incomplete (missing parts).</li>
+                        <li>Delivered Product is “No longer needed” (you no longer have a use for the product / you have changed your mind about the purchase / the size of a fashion product does not fit / you do not like the product after opening the package) - eligible for selected products only.</li>
+                    </ul>
                     <br>
                     <h5>Conditions for Returns</h5>
-                    The product must be unused, unworn, unwashed and without any flaws. Fashion products can be tried on to see if they fit and will still be considered unworn.<br>
-                    The product must include the original tags, user manual, warranty cards, freebies and accessories.<br>
-                    The product must be returned in the original and undamaged manufacturer packaging / box. If the product was delivered in a second layer of Patazone packaging, it must be returned in the same condition with a return shipping label attached. Do not put tape or stickers on the manufacturers box.<br>
+                    <ul>
+                        <li>The product must be unused, unworn, unwashed and without any flaws. Fashion products can be tried on to see if they fit and will still be considered unworn.</li>
+                        <li>The product must include the original tags, user manual, warranty cards, freebies and accessories.</li>
+                        <li>The product must be returned in the original and undamaged manufacturer packaging / box. If the product was delivered in a second layer of Patazone packaging, it must be returned in the same condition with a return shipping label attached. Do not put tape or stickers on the manufacturers box.</li>
+                    </ul>
                     <br>
                     NOTE: It is important to print out and paste the return label on your return parcel to avoid any inconvenience/delay in the process of your return.<br>
                     If a product is returned to us in an inadequate condition, we reserve the right to send it back to you.<br>

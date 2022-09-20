@@ -1,5 +1,5 @@
 <div class="hero-child-2">
-    <div class="owl-carousel owl-theme hero-slider">
+    <div class="slicker-for hero-slider">
         <?php foreach ($slidebunners['sliderImages'] as $slideImaxges) :
             $categoryname = $this->db->get_where('ptz_categories', array('id' => $slideImaxges->category_id))->row()->category_name;
             echo '<div class="item hero-slide skeleton" onclick="loadSlideCategories(\'' . base_url('store/' . $categoryname . '/' . base64_encode($slideImaxges->category_id)) . '\')" style="background: url(' . imagebaseURL . $slideImaxges->slider_image . ') no-repeat;background-size: cover; cursor: pointer;">

@@ -12,13 +12,13 @@
             </div>
             <!-- 1 -->
             <div class="footer-child-1">
-                <h6 class="footer-h6">Customer Service</h6>
+                <h6 class="footer-h6">Customer Services</h6>
                 <ul class="footer-ul">
                     <li><a href="<?= base_url('help-center'); ?>">Help Center</a></li>
                     <li><a href="<?= base_url('returns_policy'); ?>">Return Policy</a></li>
                     <li><a href="<?= base_url('about_us') ?>">About Us</a></li>
-                    <li><a href="<?= base_url('store-location') ?>">Find us on Map</a></li>
-                    <li><a href="<?= base_url('privacy-cookies_policy') ?>">Privacy & Cookies policy</a></li>
+                    <li><a href="<?= base_url('store-location') ?>">Find Us on Map</a></li>
+                    <li><a href="<?= base_url('privacy-cookies_policy') ?>">Privacy & Cookies Policy</a></li>
                     <li><a href="<?= base_url('faq') ?>">FAQs</a></li>
                 </ul>
             </div>
@@ -86,14 +86,16 @@
 <?php $this->load->view('common/homesliders/cart-modal'); ?>
 <?php $this->load->view('common/homesliders/modals'); ?>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="<?= base_url() ?>assets/js/owlcarousel/owl.carousel.min.js"></script>
-<script src="<?= base_url() ?>assets/js/owl.js"></script>
-<!-- bootstrap js link -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- <script src="<?= base_url() ?>assets/js/owlcarousel/owl.carousel.min.js"></script> -->
+<script src="<?= base_url() ?>assets/js/slick.min.js"></script>
+<script src="<?= base_url() ?>assets/js/slicker.js"></script>
+<!-- <script src="<?= base_url() ?>assets/js/owl.js"></script> -->
 
 
 <?php if ($title != 'Buy now Pay later' && $title != 'Patazone|Lipalater Register') : ?>
@@ -111,14 +113,19 @@
 <script src="<?= base_url() ?>assets/js/news-letter.js"></script>
 <script src="<?= base_url() ?>assets/js/srch.js"></script>
 <script src="<?= base_url() ?>assets/js/toastr.min.js"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script>
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".preloading").css("display", "none");
+    })
     window.addEventListener("load", function() {
-
+        // $(".preloading").css("display", "none");
         // $(".hero-child-2").css("visibility", "visible");
         $(".tab-content").css("visibility", "visible");
         // $(".loading").css("visibility", "hidden");
         // $(".shine").css("visibility", "hidden");
         // $("div").removeClass("shine");
+        // $(".skeleton").fadeOut();
         $("div").removeClass("skeleton");
         $("div").removeClass("skeleton-text");
         // $("div").removeClass("loadi");
@@ -154,7 +161,7 @@
     <script src="<?= base_url() ?>assets/js/app.js"></script>
 <?php endif; ?>
 <?php if ($title == 'shop' || $title == 'Search results' || $title == 'Products') : ?>
-    <script src="<?= base_url() ?>assets/js/groceries.js"></script>
+    <!-- <script src="<?= base_url() ?>assets/js/groceries.js"></script> -->
 <?php endif; ?>
 <?php if ($title == 'Buy now Pay later' || $title == 'Patazone|Lipalater Register') : ?>
     <script src="<?= base_url(); ?>assets/js/buyplt.js"></script>
@@ -205,8 +212,6 @@
     <?php endif;
     endif; ?>
 <?php endif; ?>
-<!-- curtom js link -->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </body>
 
 <!-- accordion script -->
